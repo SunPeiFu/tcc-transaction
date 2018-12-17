@@ -15,13 +15,13 @@ public class Participant implements Serializable {
     private static final long serialVersionUID = 4127729421281425247L;
 
     private TransactionXid xid;
-
+    // 确认执行业务方法调用
     private InvocationContext confirmInvocationContext;
-
+    //  取消业务方法调用
     private InvocationContext cancelInvocationContext;
 
     private Terminator terminator = new Terminator();
-
+    // 事物上下文编辑
     Class<? extends TransactionContextEditor> transactionContextEditorClass;
 
     public Participant() {
