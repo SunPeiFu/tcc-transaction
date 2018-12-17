@@ -15,7 +15,7 @@ public class AccountServiceImpl {
 
     @Autowired
     RedPacketAccountService redPacketAccountService;
-
+    // 添加了注释,测试是否有效
     @Autowired
     CapitalAccountService capitalAccountService;
 
