@@ -20,13 +20,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public class Transaction implements Serializable {
 
     private static final long serialVersionUID = 7291423944314337931L;
-
+    // 事物编号
     private TransactionXid xid;
-
+    // 事物状态
     private TransactionStatus status;
-
+    // 事物类型
     private TransactionType transactionType;
-
+    // 重试次数
     private volatile int retriedCount = 0;
 
     private Date createTime = new Date();
@@ -34,9 +34,9 @@ public class Transaction implements Serializable {
     private Date lastUpdateTime = new Date();
 
     private long version = 1;
-
+    // 参与者集合
     private List<Participant> participants = new ArrayList<Participant>();
-
+    // 附带属性映射
     private Map<String, Object> attachments = new ConcurrentHashMap<String, Object>();
 
     public Transaction() {

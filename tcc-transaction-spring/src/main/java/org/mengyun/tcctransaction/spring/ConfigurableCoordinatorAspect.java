@@ -11,7 +11,7 @@ import org.springframework.core.Ordered;
  */
 @Aspect
 public class ConfigurableCoordinatorAspect extends ResourceCoordinatorAspect implements Ordered {
-
+    // 加一个注释看看好使不
     private TransactionConfigurator transactionConfigurator;
 
     public void init() {

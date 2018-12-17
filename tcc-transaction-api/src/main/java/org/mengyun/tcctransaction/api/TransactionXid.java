@@ -15,9 +15,9 @@ public class TransactionXid implements Xid, Serializable {
     private static final long serialVersionUID = -6817267250789142043L;
 
     private int formatId = 1;
-
+    // 全局事物编号
     private byte[] globalTransactionId;
-
+    // 分支事物编号
     private byte[] branchQualifier;
 
     public TransactionXid() {
