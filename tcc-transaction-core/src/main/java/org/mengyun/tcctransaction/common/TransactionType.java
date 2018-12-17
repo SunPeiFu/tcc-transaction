@@ -6,8 +6,9 @@ package org.mengyun.tcctransaction.common;
  * Created by changmingxie on 11/15/15.
  */
 public enum TransactionType {
-
+    // 根事物
     ROOT(1),
+    // 分之事物
     BRANCH(2);
 
     int id;
